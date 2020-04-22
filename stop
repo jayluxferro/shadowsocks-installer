@@ -1,0 +1,1 @@
+ssserver -c ss.config --fast-open -d stop
