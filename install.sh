@@ -8,7 +8,9 @@ fi
 
 apt update
 apt full-upgrade -y
-apt install python python-pip git -y
+apt install curl python -y
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py 
 apt-get clean
 pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
