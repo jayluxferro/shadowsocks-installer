@@ -12,7 +12,7 @@ apt install curl python git -y
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py 
 apt-get clean
-pip install git+https://github.com/shadowsocks/shadowsocks.git@master
+pip install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 
 # run
 ./run
