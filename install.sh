@@ -8,7 +8,7 @@ fi
 
 apt update
 apt full-upgrade -y
-apt install curl python -y
+apt install curl python git -y
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py 
 apt-get clean
@@ -18,4 +18,5 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 ./run
 
 # display network stats
+apt clean
 netstat -antp
